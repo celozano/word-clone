@@ -104,7 +104,7 @@ h1 {
   aspect-ratio: 1 / 1;
   border: 2px solid var(--color-gray-700);
   border-radius: var(--radius);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*
@@ -229,4 +229,42 @@ h1 {
   to {
     transform: translateY(0%);
   }
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  font-size: small;
+  gap: 3px;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 3px;
+}
+
+.keyboard-key {
+  border-radius: 10%;
+  height: 18px;
+  width: 18px;
+  background-color: #d4d6da;
+  text-align: center;
+}
+
+.keyboard-key.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.keyboard-key.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.keyboard-key.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
 }
